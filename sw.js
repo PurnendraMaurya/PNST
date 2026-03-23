@@ -3,7 +3,7 @@
 //  Purnendra Maurya
 // ============================================================
 
-const CACHE_NAME = 'pnst-2026-v3';
+const CACHE_NAME = 'pnst-2026-v4';
 const BASE = '/PNST';
 const OFFLINE_PAGE = BASE + '/index.html';
 
@@ -21,11 +21,11 @@ const PRECACHE_URLS = [
   BASE + '/physics.html',
   BASE + '/gk.html',
   BASE + '/english.html',
-  BASE + '/icons/icon-192.png',
-  BASE + '/icons/icon-512.png',
-  BASE + '/icons/icon-144.png',
-  BASE + '/icons/icon-96.png',
-  BASE + '/icons/icon-72.png'
+  BASE + '/icon-192.png',
+  BASE + '/icon-512.png',
+  BASE + '/icon-144.png',
+  BASE + '/icon-96.png',
+  BASE + '/icon-72.png'
 ];
 
 // ============================================================
@@ -165,8 +165,8 @@ self.addEventListener('push', function(event) {
   var title = data.title || 'PNST 2026 — Daily Quiz!';
   var options = {
     body: data.body || 'Aaj ka Daily Quiz ready hai. Ab test do!',
-    icon: BASE + '/icons/icon-192.png',
-    badge: BASE + '/icons/icon-96.png',
+    icon: BASE + '/icon-192.png',
+    badge: BASE + '/icon-96.png',
     vibrate: [200, 100, 200],
     data: { url: data.url || BASE + '/index.html' },
     actions: [
